@@ -1,0 +1,261 @@
+.telaFundo {
+    width: 80vw;
+    height: 65vh;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+    box-shadow: 0 5px 15px var(--cor2);
+}
+
+.h1{
+    color: var(--cor4);
+    font-family: 'Coiny', system-ui; ;
+    text-align: center;
+    font-size: 45px;
+    margin: 15px 0 15px;
+}
+
+.pIntroducao {
+    color: var(--cor4);
+    font-family: Nerko One;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fc7de0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--cor4);
+    font-family: Nerko One;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    transform: scale(1.04);
+    box-shadow: 0 1px 15px #ff78e2;
+}
+
+.button .link {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fc7de0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--cor4);
+    font-family: Nerko One;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--cor3);
+}
+
+.mainContainer {
+    padding: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+}
+
+.selectBody {
+    position: relative;
+    width: 190px;
+    height: 45px;
+    margin: 5px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selectBody .select {
+    height: 110%;
+    width: 120%;
+    font-size: 18px;
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 10px;
+    border-radius: 8px;
+}
+
+.selectContainer .selectLabel {
+    color: var(--cor4);
+    font-size: 25px;
+    text-align: center;
+    font-family: Nerko One ;
+}
+
+.selectIcon {
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectIcon .img {
+    width: 18px;
+}
+
+@media (max-width: 325px) {
+    .telaFundo {
+        width: 95vw;
+        height: auto;
+    }
+    .h1 {
+        font-size: 26px;
+    }
+    .pIntroducao {
+        font-size: 18px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 5vh;
+        gap: 30px;
+    }
+    .selectBody {
+        width: 100%;
+    }
+    .selectBody .select {
+        width: 100%;
+    }
+    .selectIcon {
+        left: 88%;
+    }
+}
+
+@media (min-width: 326px) and (max-width: 425px) {
+    .telaFundo {
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+    .pIntroducao {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 5vh;
+        gap: 40px;
+    }
+    .selectBody {
+        width: 100%;
+    }
+    .selectBody .select {
+        width: 100%;
+    }
+    .selectIcon {
+        left: 90%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .telaFundo {
+        width: 80vw;
+        height: auto;
+        padding: 25px;
+    }
+    .h1 {
+        font-size: 36px;
+    }
+    .pIntroducao {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 7vh;
+        gap: 50px;
+    }
+    .selectBody {
+        width: 100%;
+        height: 50px;
+    }
+    .selectBody .select {
+        width: 108%;
+        height: 50px;
+        font-size: 18px;
+        padding: 0 12px;
+        align-items: center;
+    }
+    .selectIcon {
+        left: 95%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px){
+    .telaFundo {
+        width: 95vw; 
+        height: auto;
+        padding: 35px;
+    }
+    .h1 {
+        font-size: 40px;
+    }
+    .pIntroducao {
+        font-size: 22px;
+    }
+    .mainContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5vh;
+        gap: 15px;
+    }
+    .selectBody {
+        width: 215px;
+        height: 45px;
+    }
+    .selectBody .select {
+        width: 100%;
+        height: 100%;
+    }
+    .selectIcon {
+        left: 88%;
+    }
+}

@@ -1,0 +1,112 @@
+.header {
+    background-color: var(--cor3);
+    box-shadow: 0 8px 10px var(--cor2);
+    height: auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftHeader {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 95px;
+    min-width: 50px;
+    width: 95px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.cupcakeria {
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+    font-size: 3vh;
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.menu {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.itemMenu {
+    position: relative;
+    font-family: "Coiny", system-ui;
+    color: var(--cor4);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.itemMenu:hover .submenu {
+    max-height: 100vh;
+}
+
+.submenu {
+    position: absolute;
+    width: max-content;
+    max-height: 0;
+    background: linear-gradient(var(--cor3) 0%, var(--cor2) 100%);
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.submenu .linkSubmenu {
+    display: block;
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.submenu .linkSubmenu:hover {
+    color: var(--cor1);
+}
+
+.linkSubmenu {
+    font-size: 16px;
+    margin: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items:center;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 120px;
+        margin-right: 30px;
+    }
+
+    .cupcakeria {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 325px) {
+    .logo {
+        max-width: 100px;
+        margin-right: 30px ; 
+    }
+    .cupcakeria {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,81 @@
+.footer {
+    background-color:var(--cor2);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.contatofooter {
+    font-size: 18px;
+    color:  var(--cor4);
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.contatofooter:hover {
+    color: var(--cor1);
+}
+
+.direitosfooter {
+    font-size: 20px;
+    color: var(--cor4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.informacaoFooter{
+    font-size: 23px;
+    color: var(--cor4);
+    font-weight: bold;
+    margin-left: 7px;
+}
+
+.miniInformacao{
+    font-size: 16px;
+    color: var(--cor4);
+    word-break: break-word;
+}
+
+.iconesFooter{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.displayInformacao{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.instagram{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+.instagram:hover{
+    color: var(--cor1);
+}
+
+.cardFooter{
+    text-align: left;
+    margin: 20px;
+    width: 270px;
+}
+
+.todasAsInformacoesFooter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.divLocalizacao{
+    margin-top: 5px;
+}

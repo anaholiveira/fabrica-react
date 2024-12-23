@@ -1,0 +1,110 @@
+.telaFundo {
+    width: 37vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px var(--cor2);
+    align-items: center;
+    margin: 51px auto;
+    padding: 25px;
+}
+
+.h1 {
+    text-align: center;
+    color: var(--cor4);
+    font-family: "Coiny", system-ui;
+    font-size: 28px;
+}
+
+.buttons {
+    font-family: Nerko One;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    color: var(--cor4);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 4vh;
+}
+
+.buttons:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 5px rgb(247, 247, 247);
+}
+
+.opc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 28vw;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: Nerko One;
+    color: var(--cor4);
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .telaFundo {
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+    }
+    .opc {
+        width: 75vw;
+    }
+    .h1 {
+        font-size: 24px; 
+    }
+    .buttons {
+        font-size: 16px;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .telaFundo {
+        width: 90vw; 
+        padding: 15px;
+        gap: 20px;
+    }
+    .opc {
+        width: 75vw; 
+    }
+    .h1 {
+        font-size: 20px;
+    }
+    .buttons {
+        font-size: 14px;
+        height: auto; 
+        padding: 10px;
+    }
+}
+
+@media (max-width: 325px) {
+    .telaFundo {
+        width: 90vw; 
+        padding: 10px;
+    }
+    .opc {
+        width: 80vw;
+    }
+    .h1 {
+        font-size: 20px;
+    }
+    .buttons {
+        font-size: 10px;
+        height: auto;
+        padding: 8px;
+    }
+}

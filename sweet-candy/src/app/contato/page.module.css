@@ -1,0 +1,182 @@
+.h1 {
+    color: var(--cor4);
+    font-family: "Nerko One", cursive ;
+    text-align: center;
+    font-size: 45px;
+    margin: 15px 0 30px;
+}
+
+.secaoContato {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.form {
+    width: 190%;
+}
+
+.fieldset {
+    background: linear-gradient(#FBD1FF 0%, #FFA4EB 100%);
+    width: 100%;
+    border: 3px solid var(--cor4);
+    padding: 15px;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px var(--cor4);
+}
+
+.legend {
+    color: var(--cor4);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Coiny", system-ui;
+    padding: 0;
+}
+
+.label {
+    color: var(--cor4);
+    margin-top: 15px;
+    display: block;
+    font-size: 1.3em;
+    font-family: "Nerko One", cursive;
+    font-weight: bold;
+}
+
+.input, .textarea {
+    font-size: 1em;
+    width: 100%;
+    border: 2px solid var(--cor1) ;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px var(--cor1);
+    font-family: "Nerko One", cursive;
+}
+
+.textarea {
+    height: 120px;
+}
+
+.button {
+    background-color: #db207ed6;
+    color: var(--cor1);
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    font-family: "Nerko One", cursive;
+    font-size: 1.2em;
+}
+
+.button:hover {
+    background-color: var(--cor4);
+    box-shadow: 0 5px 10px var(--cor4);
+    transform: scale(1.02);
+}
+
+.input::placeholder, .textarea::placeholder {
+    color: #ffb5f5;
+}
+
+@media (max-width: 768px) {
+    .secaoContato {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .form {
+        width: 100%;
+    }
+    .fieldset {
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .legend {
+        font-size: 1.4em;
+        margin-bottom: 8px;
+    }
+    .label {
+        font-size: 1.2em;
+        margin-top: 12px;
+    }
+    .input, .textarea {
+        font-size: 0.9em;
+        padding: 8px;
+        margin-top: 8px;
+    }
+    .textarea {
+        height: 100px;
+    }
+    .button {
+        font-size: 1.1em;
+        padding: 8px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .h1 {
+        font-size: 1.9em;
+        margin-bottom: 15px;
+    }
+    .secaoContato {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto;
+    }
+    .form {
+        width: 100%;
+    }
+    .fieldset {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .legend {
+        font-size: 1.1em;
+    }
+    .label {
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+    .input, .textarea {
+        font-size: 0.9em;
+        padding: 8px;
+        margin-top: 5px;
+    }
+    .button {
+        font-size: 1em;
+        padding: 8px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 325px) {
+    .h1 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+    .secaocontato {
+        max-width: 300px;
+    }
+    .label {
+        font-size: 1em;
+    }
+    .input, .textarea {
+        font-size: 0.8em;
+    }
+    .button {
+        font-size: 0.9em;
+    }
+}
