@@ -276,8 +276,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 5vh;
-        gap: 15px;
+        padding: 8vh;
+        gap: 20px;
     }
     .selectBody {
         width: 215px;
