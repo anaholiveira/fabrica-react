@@ -263,21 +263,15 @@
 @media (max-width: 1540px) {
     .telaFundo {
         width: 90vw; 
-        height: auto;
+        height: 65vh;
         padding: 35px;
-    }
-    .h1 {
-        font-size: 40px;
-    }
-    .pIntroducao {
-        font-size: 22px;
     }
     .mainContainer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding: 8vh;
-        gap: 20px;
+        gap: 25px;
     }
     .selectBody {
         width: 215px;
