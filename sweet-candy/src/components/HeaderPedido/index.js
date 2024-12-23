@@ -18,8 +18,6 @@ export default function Header() {
                                         <Link className={styles.linkSubmenu} href="/devolucao">Devolução</Link></li>
                                     <li className={styles.itemSubmenu}>
                                         <Link className={styles.linkSubmenu} href="/feedback">Feedback</Link></li>
-                                    <li className={styles.itemSubmenu}>
-                                        <Link className={styles.linkSubmenu} href="/area">Area</Link></li>
                                 </ul>
                             </li>
                         </ul>
