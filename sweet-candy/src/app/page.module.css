@@ -263,8 +263,8 @@
 @media (max-width: 1540px) {
     .telaFundo {
         width: 90vw; 
-        height: 70vh;
-        padding: 35px;
+        height: auto;
+        padding: 36px;
     }
     .h1 {
         font-size: 40px;
@@ -282,6 +282,7 @@
     .selectBody {
         width: 215px;
         height: 45px;
+        margin-bottom: 50px;
     }
     .selectBody .select {
         width: 100%;
