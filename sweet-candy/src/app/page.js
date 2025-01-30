@@ -12,16 +12,17 @@ export default function Pedido() {
     const redirecionarPagina = () => {
       const select = document.getElementById("selectEmbalagem");
       const opcaoSelecionada = select.value;
-      if (opcaoSelecionada) {
+  
+      if (opcaoSelecionada && opcaoSelecionada !== "padrao") {
         window.location.href = opcaoSelecionada;
       }
     };
-
+  
     const selectEmbalagem = document.getElementById("selectEmbalagem");
     if (selectEmbalagem) {
       selectEmbalagem.addEventListener("change", redirecionarPagina);
     }
-
+  
     return () => {
       if (selectEmbalagem) {
         selectEmbalagem.removeEventListener("change", redirecionarPagina);

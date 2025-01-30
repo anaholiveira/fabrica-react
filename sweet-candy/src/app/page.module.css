@@ -260,7 +260,7 @@
     }
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1700px) {
     .telaFundo {
         width: 90vw; 
         height: auto;
@@ -292,3 +292,4 @@
         left: 88%;
     }
 }
+
