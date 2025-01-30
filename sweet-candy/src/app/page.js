@@ -30,6 +30,12 @@ export default function Pedido() {
     };
   }, []);
 
+  const resetSelect = () => {
+    document.querySelectorAll("select").forEach(select => {
+      select.value = "";
+    });
+  };
+
   return (
     <div>
       <Headerpedido />
@@ -129,13 +135,13 @@ export default function Pedido() {
           </div>
 
           <div className={styles.buttons}>
-            <button className={styles.button} type="reset">
+            <button className={styles.button} type="button" onClick={resetSelect}>
               <Link className={styles.link} href="/">Cancelar</Link>
             </button>
             <button className={styles.button} type="submit">
               <Link className={styles.link} href="/checkout">Finalizar pedido</Link>
             </button>
-            <button className={styles.button} type="reset">
+            <button className={styles.button} type="button" onClick={resetSelect}>
               <Link className={styles.link} href="/">Carrinho</Link>
             </button>
           </div>
