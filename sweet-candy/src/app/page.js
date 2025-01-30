@@ -43,7 +43,7 @@ export default function Pedido() {
               <label className={styles.selectLabel} htmlFor="selectTamanho">Tamanho</label>
                 <div id="selectTamanhoDiv" className={styles.selectBody}>
                   <select className={styles.select} name="tamanho" id="selectTamanho">
-                    <option value="">Selecione uma opção</option>
+                    <option value="">Escolha uma opção</option>
                     <option value="p">P (pequeno)</option>
                     <option value="m">M (médio)</option>
                     <option value="g">G (grande)</option>
@@ -58,7 +58,7 @@ export default function Pedido() {
             <label className={styles.selectLabel} htmlFor="selectRecheio">Recheio</label>
               <div id="selectRecheioDiv" className={styles.selectBody}>
                 <select className={styles.select} name="recheio" id="selectRecheio">
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Escolha uma opção</option>
                   <option value="brigadeiro">Brigadeiro</option>
                   <option value="doce de leite">Doce de leite</option>
                   <option value="leite ninho">Leite Ninho</option>
@@ -77,7 +77,7 @@ export default function Pedido() {
             <label className={styles.selectLabel} htmlFor="selectCobertura">Cobertura</label>
               <div id="selectCoberturaDiv" className={styles.selectBody}>
                 <select className={styles.select} name="cobertura" id="selectCobertura">
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Escolha uma opção</option>
                   <option value="glacê">Glacê</option>
                   <option value="chantilly">Chantilly</option>
                   <option value="merengue">Merengue</option>
@@ -95,7 +95,7 @@ export default function Pedido() {
             <label className={styles.selectLabel} htmlFor="selectCorCobertura">Cor da Cobertura</label>
               <div id="selectCorCoberturaDiv" className={styles.selectBody}>
                 <select className={styles.select} name="cor cobertura" id="selectCorCobertura">
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Escolha uma opção</option>
                   <option value="roxo">Roxo</option>
                   <option value="lilás">Lilás</option>
                   <option value="rosa">Rosa</option>
@@ -115,7 +115,7 @@ export default function Pedido() {
             <label className={styles.selectLabel} htmlFor="selectEmbalagem">Embalagem</label>
               <div id="selectEmbalagemDiv" className={styles.selectBody}>
                 <select className={styles.select} name="embalagem" id="selectEmbalagem">
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Escolha uma opção</option>
                   <option value="padrao">Padrão</option>
                   <option value="/embalagemPersonalizada">Personalizada</option>
                   <option value="/eventos">Para eventos</option>

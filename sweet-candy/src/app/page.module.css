@@ -87,7 +87,7 @@
 
 .selectBody .select {
     height: 110%;
-    width: 120%;
+    width: 115%;
     font-size: 18px;
     border: none;
     appearance: none;
@@ -104,7 +104,7 @@
 
 .selectIcon {
     position: absolute;
-    left: 105%;
+    left: 100%;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -228,7 +228,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1366px){
+@media (min-width: 768px) and (max-width: 1400px){
     .telaFundo {
         width: 95vw; 
         height: auto;
@@ -244,8 +244,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 5vh;
-        gap: 15px;
+        padding: 3vh;
+        gap: 10px;
     }
     .selectBody {
         width: 215px;
@@ -260,7 +260,7 @@
     }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1750px) {
     .telaFundo {
         width: 90vw; 
         height: auto;
@@ -285,11 +285,11 @@
         margin-bottom: 50px;
     }
     .selectBody .select {
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
     .selectIcon {
-        left: 88%;
+        left: 82%;
     }
 }
 
