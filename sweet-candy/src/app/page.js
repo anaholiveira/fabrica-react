@@ -1,5 +1,5 @@
 'use client';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Headerpedido from "../components/HeaderPedido";
@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 export default function Pedido() {
+  const [mensagem, setMensagem] = useState("");
 
   useEffect(() => {
     const redirecionarPagina = () => {
@@ -34,6 +35,27 @@ export default function Pedido() {
     document.querySelectorAll("select").forEach(select => {
       select.value = "";
     });
+  };
+
+  const adicionarAoCarrinho = (event) => {
+    event.preventDefault();
+
+    const selects = document.querySelectorAll("select");
+    let todasSelecionadas = true;
+
+    selects.forEach(select => {
+      if (!select.value) {
+        todasSelecionadas = false;
+      }
+    });
+
+    if (todasSelecionadas) {
+      setMensagem("Sua compra foi adicionada ao carrinho!");
+      alert("Sua compra foi adicionada ao carrinho!");
+      resetSelect();
+    } else {
+      alert("Não foi possível adicionar ao carrinho. Selecione todas as opções antes de continuar.");
+    }
   };
 
   return (
@@ -141,7 +163,7 @@ export default function Pedido() {
             <button className={styles.button} type="submit">
               <Link className={styles.link} href="/checkout">Finalizar pedido</Link>
             </button>
-            <button className={styles.button} type="button" onClick={resetSelect}>
+            <button className={styles.button} type="button" onClick={adicionarAoCarrinho}>
               <Link className={styles.link} href="/">Carrinho</Link>
             </button>
           </div>
