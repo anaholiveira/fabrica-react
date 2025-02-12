@@ -1,3 +1,4 @@
+'use client';
 import styles from "./page.module.css";
 import Header from "../../components/Header";
 import FooterContato from "../../components/FooterContato";
@@ -23,7 +24,7 @@ export default function Contato() {
                     <input className={styles.input} type="text" id="idEmail" name="email" placeholder="Digite seu email " required />
 
                     <label className={styles.label} htmlFor="telefone">♡ Telefone:</label>
-                    <input className={styles.input} type="text" id="idTelefone" name="telefone" placeholder="Digite seu telefone " />
+                    <input className={styles.input} type="tel" id="idTelefone" name="telefone" placeholder="Digite seu telefone " required onInput={e => e.target.value = e.target.value.replace(/[^0-9]/g, '')} maxLength={15}/>
     
                     <label className={styles.label} htmlFor="mensagem">♡ Mensagem:</label>
                     <textarea className={styles.textarea} id="idMensagem" name="mensagem" placeholder="Digite uma mensagem aqui" required />
