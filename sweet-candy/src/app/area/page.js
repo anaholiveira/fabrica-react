@@ -29,7 +29,7 @@ export default function Area() {
                     </button>
                             
                     <button className={styles.buttons}>
-                        <Link className={styles.links} href="/relatorio">Emitir relatório dos produtos mais vendidos</Link>
+                        <Link className={styles.links} href="/relatorio">Emitir relatório</Link>
                     </button>
                 </div>
                 
