@@ -15,8 +15,6 @@ export default function Header() {
                             <li className={styles.itemMenu}>Menu
                                 <ul className={styles.submenu} >
                                     <li className={styles.itemSubmenu}>
-                                        <Link className={styles.linkSubmenu} href="/devolucao">Devolução</Link></li>
-                                    <li className={styles.itemSubmenu}>
                                         <Link className={styles.linkSubmenu} href="/feedback">Feedback</Link></li>
                                 </ul>
                             </li>

@@ -1,6 +1,6 @@
 .telaFundo {
-    width: 80vw;
-    height: 65vh;
+    width: 70vw;
+    height: 60vh;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -10,12 +10,12 @@
     box-shadow: 0 5px 15px var(--cor2);
 }
 
-.h1{
+.h1 {
     color: var(--cor4);
     font-family: 'Coiny', system-ui; ;
     text-align: center;
     font-size: 45px;
-    margin: 15px 0 15px;
+    margin: 15px 0 10px;
 }
 
 .pIntroducao {
@@ -23,7 +23,7 @@
     font-family: Nerko One;
     text-align: center;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .button {
@@ -35,6 +35,7 @@
     font-size: 20px;
     color: var(--cor4);
     font-family: Nerko One;
+    text-decoration: none;
 }
 
 .buttons{
@@ -42,8 +43,8 @@
     justify-content: space-between;
     flex-direction: row;
     gap: 100px;
-    margin-top: auto;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .button:hover {
@@ -51,35 +52,22 @@
     box-shadow: 0 1px 15px #ff78e2;
 }
 
-.button .link {
-    padding: 10px 20px;
-    border: none;
-    background-color: #fc7de0;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    color: var(--cor4);
-    font-family: Nerko One;
-    text-decoration: none;
-}
-
 .link:hover{
     color: var(--cor3);
 }
 
 .mainContainer {
-    padding: 10vh;
+    padding: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 90px;
+    gap: 70px;
 }
 
 .selectBody {
     position: relative;
     width: 190px;
     height: 45px;
-    margin: 5px 0 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,18 +76,19 @@
 .selectBody .select {
     height: 110%;
     width: 115%;
-    font-size: 18px;
+    font-size: 17px;
     border: none;
     appearance: none;
     padding: 0 30px 0 10px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .selectContainer .selectLabel {
     color: var(--cor4);
     font-size: 25px;
     text-align: center;
-    font-family: Nerko One ;
+    font-family: Nerko One;
 }
 
 .selectIcon {
@@ -108,12 +97,7 @@
     top: 50%;
     transform: translateY(-50%);
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.selectIcon .img {
-    width: 18px;
+    cursor: pointer;
 }
 
 @media (max-width: 325px) {
@@ -121,27 +105,13 @@
         width: 95vw;
         height: auto;
     }
-    .h1 {
-        font-size: 26px;
-    }
-    .pIntroducao {
-        font-size: 18px;
-    }
-    .button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
     .buttons {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
     .mainContainer {
         flex-direction: column;
         padding: 5vh;
-        gap: 30px;
-    }
-    .selectBody {
-        width: 100%;
     }
     .selectBody .select {
         width: 100%;
@@ -157,16 +127,6 @@
         height: auto;
         padding: 20px;
     }
-    .h1 {
-        font-size: 30px;
-    }
-    .pIntroducao {
-        font-size: 20px;
-    }
-    .button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
     .buttons {
         flex-direction: column;
         gap: 20px;
@@ -174,10 +134,6 @@
     .mainContainer {
         flex-direction: column;
         padding: 5vh;
-        gap: 40px;
-    }
-    .selectBody {
-        width: 100%;
     }
     .selectBody .select {
         width: 100%;
@@ -193,16 +149,6 @@
         height: auto;
         padding: 25px;
     }
-    .h1 {
-        font-size: 36px;
-    }
-    .pIntroducao {
-        font-size: 20px;
-    }
-    .button {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
     .buttons {
         flex-direction: column;
         gap: 30px;
@@ -210,11 +156,6 @@
     .mainContainer {
         flex-direction: column;
         padding: 7vh;
-        gap: 50px;
-    }
-    .selectBody {
-        width: 100%;
-        height: 50px;
     }
     .selectBody .select {
         width: 108%;
@@ -234,18 +175,12 @@
         height: auto;
         padding: 36px;
     }
-    .h1 {
-        font-size: 40px;
-    }
-    .pIntroducao {
-        font-size: 22px;
-    }
     .mainContainer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding: 8vh;
-        gap: 25px;
+        gap: 20px;
     }
     .selectBody {
         width: 215px;
@@ -263,20 +198,14 @@
 
 @media (min-width: 1270px) and (max-width: 1538px) {
     .telaFundo {
-        width: 95vw; 
+        width: 90vw; 
         height: auto;
-        padding: 36px;
-    }
-    .h1 {
-        font-size: 40px;
-    }
-    .pIntroducao {
-        font-size: 22px;
+        padding: 30px;
     }
     .mainContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-        gap: 25px;
+        gap: 20px;
         justify-items: center;
         grid-auto-flow: column;
     }
@@ -292,4 +221,42 @@
     .selectIcon {
         left: 82%;
     }
+}
+.resumoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quantidadeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidadeLabel {
+    font-size: 20px;
+    font-family: Nerko One;
+    color: var(--cor4);
+}
+
+.quantidadeInput {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.resumoTitulo {
+    font-family: Nerko One;
+    font-size: 24px;
+    color: var(--cor4)
 }
