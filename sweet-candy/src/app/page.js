@@ -15,8 +15,16 @@ export default function Pedido() {
     cobertura: "",
     corCobertura: ""
   });
+
   const precoBase = 0.00;
   const precoTotal = (quantidade * precoBase).toFixed(2);
+
+  const labels = {
+    tamanho: "Tamanho",
+    recheio: "Recheio",
+    cobertura: "Cobertura",
+    corCobertura: "Cor da Cobertura"
+  };
 
   const resetSelect = () => {
     document.querySelectorAll("select").forEach(select => {
@@ -50,9 +58,9 @@ export default function Pedido() {
         <p className={styles.pIntroducao}>Monte seu cupcake fazendo uma escolha perfeita!</p>
 
         <div className={styles.mainContainer}>
-          {["tamanho", "recheio", "cobertura", "corCobertura"].map((item, index) => (
+          {Object.keys(pedido).map((item, index) => (
             <div key={index} className={styles.selectContainer}>
-              <label className={styles.selectLabel} htmlFor={`select${item}`}>{item.charAt(0).toUpperCase() + item.slice(1)}</label>
+              <label className={styles.selectLabel} htmlFor={`select${item}`}>{labels[item]}</label>
               <div className={styles.selectBody}>
                 <select className={styles.select} name={item} id={`select${item}`} onChange={handleSelectChange}>
                   <option value="">Escolha uma opção</option>
@@ -72,10 +80,9 @@ export default function Pedido() {
         <div className={styles.resumoContainer}>
           <div className={styles.resumoPedido}>
             <h2 className={styles.resumoTitulo}>Resumo do Pedido</h2>
-            <p><strong>Tamanho:</strong> {pedido.tamanho || ""}</p>
-            <p><strong>Recheio:</strong> {pedido.recheio || ""}</p>
-            <p><strong>Cobertura:</strong> {pedido.cobertura || ""}</p>
-            <p><strong>Cor da Cobertura:</strong> {pedido.corCobertura || ""}</p>
+            {Object.keys(pedido).map((item, index) => (
+              <p key={index}><strong>{labels[item]}:</strong> {pedido[item] || ""}</p>
+            ))}
           </div>
           <div className={styles.quantidadeContainer}>
             <label className={styles.quantidadeLabel} htmlFor="quantidade">Quantidade:</label>

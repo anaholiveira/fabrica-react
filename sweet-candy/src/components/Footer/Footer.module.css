@@ -5,19 +5,6 @@
     width: 100%;
 }
 
-.contatofooter {
-    font-size: 18px;
-    color:  var(--cor4);
-    display: flexbox;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-}
-
-.contatofooter:hover {
-    color: var(--cor1);
-}
-
 .direitosfooter {
     font-size: 20px;
     color: var(--cor4);
@@ -53,12 +40,12 @@
     margin-bottom: 10px;
 }
 
-.instagram{
+.instagram, .facebook{
     text-decoration: none;
     color: var(--cor4);
 }
 
-.instagram:hover{
+.instagram:hover, .facebook:hover{
     color: var(--cor1);
 }
 
@@ -74,8 +61,4 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-}
-
-.divLocalizacao{
-    margin-top: 5px;
 }

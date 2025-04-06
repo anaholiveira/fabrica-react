@@ -100,134 +100,12 @@
     cursor: pointer;
 }
 
-@media (max-width: 325px) {
-    .telaFundo {
-        width: 95vw;
-        height: auto;
-    }
-    .buttons {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .mainContainer {
-        flex-direction: column;
-        padding: 5vh;
-    }
-    .selectBody .select {
-        width: 100%;
-    }
-    .selectIcon {
-        left: 88%;
-    }
-}
-
-@media (min-width: 326px) and (max-width: 425px) {
-    .telaFundo {
-        width: 90vw;
-        height: auto;
-        padding: 20px;
-    }
-    .buttons {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .mainContainer {
-        flex-direction: column;
-        padding: 5vh;
-    }
-    .selectBody .select {
-        width: 100%;
-    }
-    .selectIcon {
-        left: 90%;
-    }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-    .telaFundo {
-        width: 80vw;
-        height: auto;
-        padding: 25px;
-    }
-    .buttons {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .mainContainer {
-        flex-direction: column;
-        padding: 7vh;
-    }
-    .selectBody .select {
-        width: 108%;
-        height: 50px;
-        font-size: 18px;
-        padding: 0 12px;
-        align-items: center;
-    }
-    .selectIcon {
-        left: 95%;
-    }
-}
-
-@media (max-width: 1750px) {
-    .telaFundo {
-        width: 90vw; 
-        height: auto;
-        padding: 36px;
-    }
-    .mainContainer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 8vh;
-        gap: 20px;
-    }
-    .selectBody {
-        width: 215px;
-        height: 45px;
-        margin-bottom: 50px;
-    }
-    .selectBody .select {
-        width: 95%;
-        height: 100%;
-    }
-    .selectIcon {
-        left: 82%;
-    }
-}
-
-@media (min-width: 1270px) and (max-width: 1538px) {
-    .telaFundo {
-        width: 90vw; 
-        height: auto;
-        padding: 30px;
-    }
-    .mainContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-        gap: 20px;
-        justify-items: center;
-        grid-auto-flow: column;
-    }
-    .selectBody {
-        width: 215px;
-        height: 45px;
-        margin-bottom: 50px;
-    }
-    .selectBody .select {
-        width: 95%;
-        height: 100%;
-    }
-    .selectIcon {
-        left: 82%;
-    }
-}
 .resumoContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 55%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -259,4 +137,141 @@
     font-family: Nerko One;
     font-size: 24px;
     color: var(--cor4)
+}
+
+@media (max-width: 325px) {
+    .telaFundo {
+        width: 95vw;
+        height: auto;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 3vh;
+    }
+    .selectBody .select {
+        width: 100%;
+    }
+    .selectIcon {
+        left: 88%;
+    }
+    .resumoContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+      }
+}
+
+@media (min-width: 326px) and (max-width: 425px) {
+    .telaFundo {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 3vh;
+    }
+    .selectBody .select {
+        width: 100%;
+    }
+    .selectIcon {
+        left: 90%;
+    }
+    .resumoContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .telaFundo {
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mainContainer {
+        flex-direction: column;
+        padding: 3vh;
+    }
+    .selectBody .select {
+        width: 108%;
+        height: 50px;
+        font-size: 18px;
+        padding: 0 12px;
+        align-items: center;
+    }
+    .selectIcon {
+        left: 95%;
+    }
+    .resumoContainer {
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1270px) and (max-width: 1538px) {
+    .telaFundo {
+        width: 90vw; 
+        height: auto;
+        padding: 15px;
+    }
+    .mainContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        grid-auto-flow: column;
+    }
+    .selectBody {
+        width: 215px;
+        height: 45px;
+        margin-bottom: 50px;
+    }
+    .selectBody .select {
+        width: 95%;
+        height: 100%;
+    }
+    .selectIcon {
+        left: 82%;
+    }
+}
+
+@media (max-width: 1750px) {
+    .telaFundo {
+        width: 90vw; 
+        height: auto;
+        padding: 15px;
+    }
+    .mainContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3vh;
+        gap: 20px;
+    }
+    .selectBody {
+        width: 215px;
+        height: 45px;
+        margin-bottom: 50px;
+    }
+    .selectBody .select {
+        width: 95%;
+        height: 100%;
+    }
+    .selectIcon {
+        left: 82%;
+    }
 }
