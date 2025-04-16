@@ -47,6 +47,7 @@
 
 .instagram:hover, .facebook:hover{
     color: var(--cor1);
+    cursor: pointer;
 }
 
 .cardFooter{

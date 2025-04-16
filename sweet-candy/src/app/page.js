@@ -64,10 +64,14 @@ export default function Pedido() {
               <div className={styles.selectBody}>
                 <select className={styles.select} name={item} id={`select${item}`} onChange={handleSelectChange}>
                   <option value="">Escolha uma opção</option>
-                  {item === "tamanho" && ["P (pequeno) R$5,00", "M (médio) R$8,00", "G (grande) R$10,00"].map(opt => <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "recheio" && ["Brigadeiro R$2,00", "Doce de leite R$2,00", "Leite Ninho R$3,00", "Nutella R$4,00", "Nenhum R$0,00"].map(opt => <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "cobertura" && ["Glacê R$2,00", "Chantilly R$3,00", "Merengue R$3,00"].map(opt => <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "corCobertura" && ["Roxo R$1,00", "Lilás R$1,00", "Rosa R$1,00", "Azul R$1,00", "Azul Claro R$1,00", "Verde Menta R$1,00", "Branco R$0,00"].map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "tamanho" && ["P (pequeno) R$5,00", "M (médio) R$8,00", "G (grande) R$10,00"].map(opt => 
+                  <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "recheio" && ["Brigadeiro R$2,00", "Doce de leite R$2,00", "Leite Ninho R$3,00", "Nutella R$4,00", "Nenhum R$0,00"].map(opt => 
+                  <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "cobertura" && ["Glacê R$2,00", "Chantilly R$3,00", "Merengue R$3,00"].map(opt => 
+                  <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "corCobertura" && ["Roxo R$1,00", "Lilás R$1,00", "Rosa R$1,00", "Azul R$1,00", "Azul Claro R$1,00", "Verde Menta R$1,00", "Branco R$0,00"].map(opt => 
+                  <option key={opt} value={opt}>{opt}</option>)}
                 </select>
                 <div className={styles.selectIcon}>
                   <Image className={styles.img} src="/images/iconseta.png" alt="icon seta" width={18} height={18} />
@@ -101,13 +105,13 @@ export default function Pedido() {
 
         <div className={styles.buttons}>
           <button className={styles.button} type="button" onClick={resetSelect}>
-            <Link className={styles.link} href="/">Cancelar</Link>
+            <Link className={styles.link} href="/">Cancelar opções</Link>
           </button>
           <button className={styles.button} type="submit">
             <Link className={styles.link} href="/checkout">Finalizar pedido</Link>
           </button>
           <button className={styles.button} type="button" onClick={adicionarAoCarrinho}>
-            <Link className={styles.link} href="/">Carrinho</Link>
+            <Link className={styles.link} href="/">Adicionar ao carrinho</Link>
           </button>
         </div>
       </div>

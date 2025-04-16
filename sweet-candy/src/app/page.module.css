@@ -1,6 +1,6 @@
 .telaFundo {
     width: 70vw;
-    height: 60vh;
+    height: 58vh;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -23,7 +23,6 @@
     font-family: Nerko One;
     text-align: center;
     font-size: 24px;
-    margin-top: 5px;
 }
 
 .button {
@@ -42,8 +41,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 100px;
-    margin-top: 35px;
+    gap: 80px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
