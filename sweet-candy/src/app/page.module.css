@@ -18,6 +18,13 @@
     margin: 15px 0 10px;
 }
 
+.h2 {
+    color: var(--cor4);
+    font-family: 'Coiny', system-ui; ;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
 .pIntroducao {
     color: var(--cor4);
     font-family: Nerko One;
@@ -137,6 +144,55 @@
     font-size: 24px;
     color: var(--cor4)
 }
+
+.carrinho {
+    margin-left: 96%;
+    cursor: pointer;
+}
+
+.detalhesCupcakeCarrinho {
+    margin-bottom: 25px;
+    padding-left: 28px;
+    padding-top: 10px;
+}
+
+.strong {
+    color: var(--cor4);
+}
+
+.pCarrinho {
+    font-size: 20px;
+}
+
+.detalhesCarrinho {
+    position: fixed;
+    top: 100px;
+    z-index: 999;
+    width: 500px;
+    height: 500px;
+    background-color: var(--cor3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.detalhesDoCupcake {
+    overflow-y: auto;
+    max-height: 360px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.3);
+
+  }
 
 @media (max-width: 325px) {
     .telaFundo {

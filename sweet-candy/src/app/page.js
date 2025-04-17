@@ -1,10 +1,10 @@
 'use client';
 import { useState } from "react";
-import styles from "./page.module.css";
 import Image from "next/image";
-import Headerpedido from "../components/HeaderPedido";
-import Footer from "../components/Footer";
-import Link from "next/link";
+import Headerpedido from "@/components/HeaderPedido";
+import Footer from '@/components/Footer';
+import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function Pedido() {
   const [mensagem, setMensagem] = useState("");
@@ -15,6 +15,8 @@ export default function Pedido() {
     cobertura: "",
     corCobertura: ""
   });
+
+  const [mostrarCarrinho, setMostrarCarrinho] = useState(false);
 
   const precoBase = 0.00;
   const precoTotal = (quantidade * precoBase).toFixed(2);
@@ -53,7 +55,35 @@ export default function Pedido() {
   return (
     <div>
       <Headerpedido />
+
       <div className={styles.telaFundo}>
+        <Image
+          className={styles.carrinho}
+          src='/images/carrinho.png'
+          alt='Carrinho'
+          width={32}
+          height={32}
+          onClick={() => setMostrarCarrinho(!mostrarCarrinho)}
+        />
+
+        {mostrarCarrinho && (
+          <>
+            <div className={styles.overlay} onClick={() => setMostrarCarrinho(false)}></div>
+            <div className={styles.detalhesCarrinho}>
+              <h2 className={styles.h2}>Carrinho</h2>
+              <div className={styles.detalhesDoCupcake}>
+                {[1, 2, 3, 4].map((id) => (
+                  <div key={id} className={styles.detalhesCupcakeCarrinho}>
+                    <p className={styles.pCarrinho}><strong className={styles.strong}>ID:</strong> 0{id}</p>
+                    <p className={styles.pCarrinho}><strong className={styles.strong}>Ingredientes:</strong> pequeno, brigadeiro, chantilly, rosa</p>
+                    <p className={styles.pCarrinho}><strong className={styles.strong}>Quantidade:</strong> 02</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
+
         <h1 className={styles.h1}>Faça seu pedido</h1>
         <p className={styles.pIntroducao}>Monte seu cupcake fazendo uma escolha perfeita!</p>
 
@@ -64,14 +94,14 @@ export default function Pedido() {
               <div className={styles.selectBody}>
                 <select className={styles.select} name={item} id={`select${item}`} onChange={handleSelectChange}>
                   <option value="">Escolha uma opção</option>
-                  {item === "tamanho" && ["P (pequeno) R$5,00", "M (médio) R$8,00", "G (grande) R$10,00"].map(opt => 
-                  <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "recheio" && ["Brigadeiro R$2,00", "Doce de leite R$2,00", "Leite Ninho R$3,00", "Nutella R$4,00", "Nenhum R$0,00"].map(opt => 
-                  <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "cobertura" && ["Glacê R$2,00", "Chantilly R$3,00", "Merengue R$3,00"].map(opt => 
-                  <option key={opt} value={opt}>{opt}</option>)}
-                  {item === "corCobertura" && ["Roxo R$1,00", "Lilás R$1,00", "Rosa R$1,00", "Azul R$1,00", "Azul Claro R$1,00", "Verde Menta R$1,00", "Branco R$0,00"].map(opt => 
-                  <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "tamanho" && ["P (pequeno) R$5,00", "M (médio) R$8,00", "G (grande) R$10,00"].map(opt =>
+                    <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "recheio" && ["Brigadeiro R$2,00", "Doce de leite R$2,00", "Leite Ninho R$3,00", "Nutella R$4,00", "Nenhum R$0,00"].map(opt =>
+                    <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "cobertura" && ["Glacê R$2,00", "Chantilly R$3,00", "Merengue R$3,00"].map(opt =>
+                    <option key={opt} value={opt}>{opt}</option>)}
+                  {item === "corCobertura" && ["Roxo R$1,00", "Lilás R$1,00", "Rosa R$1,00", "Azul R$1,00", "Azul Claro R$1,00", "Verde Menta R$1,00", "Branco R$0,00"].map(opt =>
+                    <option key={opt} value={opt}>{opt}</option>)}
                 </select>
                 <div className={styles.selectIcon}>
                   <Image className={styles.img} src="/images/iconseta.png" alt="icon seta" width={18} height={18} />
@@ -115,6 +145,7 @@ export default function Pedido() {
           </button>
         </div>
       </div>
+
       <Footer />
     </div>
   );
